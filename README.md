@@ -38,9 +38,20 @@ This project was put together using create-react-app (CRA). You will not need to
 
 **Planning**
 
-- [ ] If you want, this is the time to make a simple design spec (look up ["simple wireframes"](https://www.google.com/search?q=simple+wireframes) to find resources & examples). **A pen & paper sketch (or outline) is often the fastest way to start your planning.**
-- [ ] Once you have a design plan in mind, break down the designs into individual components.
-- [ ] Plan which components will hold state, what data each needs from props (if any), and where you will be making your data fetch.
+- [ x ] If you want, this is the time to make a simple design spec (look up ["simple wireframes"](https://www.google.com/search?q=simple+wireframes) to find resources & examples). **A pen & paper sketch (or outline) is often the fastest way to start your planning.**
+- [ x ] Once you have a design plan in mind, break down the designs into individual components.
+      - card maker
+      - card appender
+      - image fetcher, appends to card somehow
+      - renders data
+      - button that shows and hides non-photo data (theater mode basically)
+      - navbar renderer / appendererer
+
+- [ x ] Plan which components will hold state, what data each needs from props (if any), and where you will be making your data fetch.
+      - state will be updated when the fetched data changes i guess!
+      - data will need a state to represent whether it's hidden or not
+      - props will work as props do and parents will pass data to children ;shrug; I don't have any data yet
+      - 
 - [ ] Now it's time to jump into the code!
 
 **File structure**
