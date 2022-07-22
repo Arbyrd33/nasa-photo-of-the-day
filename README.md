@@ -52,12 +52,12 @@ This project was put together using create-react-app (CRA). You will not need to
       - data will need a state to represent whether it's hidden or not
       - props will work as props do and parents will pass data to children ;shrug; I don't have any data yet
       - 
-- [ ] Now it's time to jump into the code!
+- [ x ] Now it's time to jump into the code!
 
 **File structure**
 
-- [ ] Take a look at your planned components. Create the folders and files you need for each component.
-- [ ] Leave most of them blank for now - you need to get your data from the API before you can really get these built.
+- [ x ... for now ] Take a look at your planned components. Create the folders and files you need for each component.
+- [ ok! ] Leave most of them blank for now - you need to get your data from the API before you can really get these built.
 
 **Fetching the Data**
 
