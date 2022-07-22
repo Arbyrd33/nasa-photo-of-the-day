@@ -8,9 +8,10 @@ body {
   background-image: url(https://live.staticflickr.com/65535/52211883534_f45cb76810_b.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
+  background-attachment: fixed;
 }
 .App {
-  margin: 3rem;
+  margin: .5rem;
 }
 h1 {
   margin: 0;
@@ -20,9 +21,21 @@ h1 {
   background-color: black;
   color: white;
   border: 2px solid white;
-  margin: 1rem 13rem 3rem 13rem;
-}
+  margin: 1rem  3rem ;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
 
+}
+.nav {
+  align-items: flex-start;
+  background-color: #C17654;
+  margin: auto;
+  margin-left: 3em;
+}
+p {
+  padding: 2em 7em;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;

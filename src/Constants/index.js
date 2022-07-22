@@ -3,4 +3,4 @@ const apiValues = {
     API_KEY: "gzE5FCLWusBSnkh8yroSjITSw7PW86RUtxLKa5j5"
 }
 
-export default apiValues
+export default apiValues;

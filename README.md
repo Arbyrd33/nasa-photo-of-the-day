@@ -46,6 +46,7 @@ This project was put together using create-react-app (CRA). You will not need to
       - renders data
       - button that shows and hides non-photo data (theater mode basically)
       - navbar renderer / appendererer
+      - get data button which renders the api data into the card
 
 - [ x ] Plan which components will hold state, what data each needs from props (if any), and where you will be making your data fetch.
       - state will be updated when the fetched data changes i guess!
@@ -61,7 +62,7 @@ This project was put together using create-react-app (CRA). You will not need to
 
 **Fetching the Data**
 
-- [ ] In `App.js` (or where ever you wanted to fetch the data) add state for the data you'll be getting from NASA.
+- [ x ] In `App.js` (or where ever you wanted to fetch the data) add state for the data you'll be getting from NASA.
 - [ ] Add an effect hook to handle the API call side effect.
 - [ ] Go to the [NASA APOD API docs](https://api.nasa.gov/#apod) and read through the docs to see how to make the API call.
 - [ x ] You don't _need_ an API key. However you may need one if you exceed the API request limits.
@@ -79,15 +80,15 @@ _Note: if the photo url is NOT a photo, you will need to learn how to display a 
 
 **Adding the Data to State**
 
-- [ ] Once you have made the call correctly, and logged the data, add the data to the state property you built.
+- [ x ] Once you have made the call correctly, and logged the data, add the data to the state property you built.
 
 **Display the Data**
 Now is the time to build out your other components. Compose your UI, and then pass the data to your children components via props so you can render it on the DOM.
 
 #### _MVP Requirements:_
 
-- [ ] Use the effect hook to fetch the APOD data when the component mounts.
-- [ ] Display the APOD data in different components that are composed together to build your UI.
+- [ x ] Use the effect hook to fetch the APOD data when the component mounts.
+- [ x ] Display the APOD data in different components that are composed together to build your UI.
 
 #### Pro Tips
 
@@ -116,7 +117,7 @@ Do not attempt stretch problems until MVP has been reached and a final commit ha
 
 Follow these steps for completing your project.
 
-- [ ] Submit a link to your repository in Canvas.
+- [ x ] Submit a link to your repository in Canvas.
 
 ----
 

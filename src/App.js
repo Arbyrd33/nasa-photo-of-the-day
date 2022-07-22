@@ -1,35 +1,44 @@
 import React, {useState, useEffect} from "react";
+
 import axios from "axios";
+
 import apiValues from "./Constants"
+import ShowInfo from "./Components/Buttons/ShowInfo"
 import "./App.css";
 
-const defaultValues = {
-  copyright: "",
-  date: "",
-  explanation: "",
-  hdurl: "",
-  title: "",
-  media_type: ""
-}
 
-function App() {
+export default function App() {
 
+  const [nasaData, setNasaData] = useState([]);
+  const [todaysPicture, setTodaysPicture] = useState(null);
 
-axios.get(`${apiValues.API_URL}${apiValues.API_KEY}`)
-  .then (res => {
-    // console.log(res.data);
-    const data = res.data;
-  })
-  .catch (err => {
-    console.error(err)
-  })
+  useEffect(()=>{
+    axios.get(`${apiValues.API_URL}${apiValues.API_KEY}`)
+    .then (res => {
+      console.log(res.data);
+      setNasaData(res.data);
+    })
+    .catch (err => {
+      console.error(err)
+    })
 
-
+  }, [])
+  
   return (
     <div className="App">
       <h1>NASA Photo of the Day</h1>
       <div className = "container">
-        <p>If you run away now, will you come back around?</p>
+        <div className ="nav">
+          <p>shameless portfolio plug link (eventually) goes here</p>
+        </div>
+        <div className = "card">
+        <h3>{nasaData.date}: <i>{nasaData.title}</i></h3>
+        <img src = {nasaData.url} alt={nasaData.title}/>
+        {/* <span><p onClick={<ShowInfo/>}>Show Details...</p></span> */}
+        {/* ^^^ Eventually I want that to be functional with the data on the next line. */}
+        <p>{nasaData.explanation}</p>
+
+        </div>
       </div>
       <p>
         copyright nobody nowhere tonight. here we go again
@@ -37,5 +46,3 @@ axios.get(`${apiValues.API_URL}${apiValues.API_KEY}`)
     </div>
   );
 }
-
-export default App;
